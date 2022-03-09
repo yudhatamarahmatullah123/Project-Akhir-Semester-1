@@ -10,7 +10,7 @@ Prodi       : Teknik Informatika
 using namespace std;
 
 int main(){
-	bool saldo;
+    bool saldo;
     char menu[50], back;
     const int diskon = 2000;
     string ulang, nama, file, tgl, yt, telp;
@@ -18,7 +18,7 @@ int main(){
 		harga[9] = {125, 150, 125, 150, 125, 150, 500, 750, 150}, i = 0;
 
 do {
-	system("clear");
+    system("clear");
     cout<<"┏━━━┳━━━┳┓╋╋┏━━━┳━┓┏━┳━━━┳━━━━┓┏━━━┳━━━┳━━━━┳━━━┳━┓╋┏┳━━━┓┏━━━┳━━┓┏━━━━┳━━━┳┓┏━┳━━━┓┏━━━┳━━━┳━━━┳━━━┳━━━┳━━━━┳━━━┳┓┏━┳━━━┳━┓╋┏┓"<<endl;
     cout<<"┃┏━┓┃┏━━┫┃╋╋┃┏━┓┃┃┗┛┃┃┏━┓┃┏┓┏┓┃┗┓┏┓┃┏━┓┃┏┓┏┓┃┏━┓┃┃┗┓┃┃┏━┓┃┗┓┏┓┣┫┣┛┃┏┓┏┓┃┏━┓┃┃┃┏┫┏━┓┃┃┏━┓┃┏━━┫┏━┓┃┏━┓┃┏━━┫┏┓┏┓┃┏━┓┃┃┃┏┫┏━┓┃┃┗┓┃┃"<<endl;
     cout<<"┃┗━━┫┗━━┫┃╋╋┃┃╋┃┃┏┓┏┓┃┃╋┃┣┛┃┃┗┛╋┃┃┃┃┃╋┃┣┛┃┃┗┫┃╋┃┃┏┓┗┛┃┃╋┗┛╋┃┃┃┃┃┃╋┗┛┃┃┗┫┃╋┃┃┗┛┛┃┃╋┃┃┃┗━┛┃┗━━┫┗━┛┃┃╋┗┫┗━━╋┛┃┃┗┫┃╋┃┃┗┛┛┃┃╋┃┃┏┓┗┛┃"<<endl;
@@ -56,15 +56,15 @@ do {
     cout<<"|                                                                                   |"<<endl;
     cout<<"|                      Selamat Datang Di Toko Percetakan AMORE 3                    |"<<endl;
     cout<<"|                                                                                   |"<<endl;
-    cout<<"|	    [1] A4 70 Gram                  =                         Rp 125             |"<<endl;
-    cout<<"|	    [2] A4 80 Gram                  =                         RP 150             |"<<endl;
+    cout<<"|	    [1] A4 70 Gram                  =                         Rp 125           |"<<endl;
+    cout<<"|	    [2] A4 80 Gram                  =                         RP 150           |"<<endl;
     cout<<"|      [3] F4 70 Gram                  =                         RP 125             |"<<endl;
-    cout<<"|	    [4] F4 80 Gram                  =                         Rp 150             |"<<endl;
-    cout<<"|	    [5] Q 70 Gram                   =                         Rp 125             |"<<endl;
-    cout<<"|	    [6] Q 80 Gram                   =                         Rp 150             |"<<endl;
-    cout<<"|	    [7] A3 70 Gram                  =                         Rp 500             |"<<endl;
-    cout<<"|	    [8] Bufallo                     =                         Rp 750             |"<<endl;
-    cout<<"|	    [9] Kertas Warna                =                         Rp 150             |"<<endl;
+    cout<<"|	    [4] F4 80 Gram                  =                         Rp 150           |"<<endl;
+    cout<<"|	    [5] Q 70 Gram                   =                         Rp 125           |"<<endl;
+    cout<<"|	    [6] Q 80 Gram                   =                         Rp 150           |"<<endl;
+    cout<<"|	    [7] A3 70 Gram                  =                         Rp 500           |"<<endl;
+    cout<<"|	    [8] Bufallo                     =                         Rp 750           |"<<endl;
+    cout<<"|	    [9] Kertas Warna                =                         Rp 150           |"<<endl;
     cout<<"|                                                                                   |"<<endl;
     cout<<"|===================================================================================|"<<endl;
     cout<<"|     Jln Mastrip No 22c, Telp 0812-4919-6789, E-mail amore3_mastrip@yahoo.com      |"<<endl;
@@ -73,9 +73,9 @@ do {
     cout<<"Kode No. "<<&tgl<<endl;
     cout<<endl;
     cout<<"Masukkan Tanggal Pemesanan            : "; cin>>tgl;
-	cout<<"Masukkan Nama Anda                    : "; cin>>nama;
-	cout<<"Masukkan No Telpon                    : "; cin>>telp;
-	cout<<"Masukkam File Yang Akan Di Duplikat   : "; cin>>file;
+    cout<<"Masukkan Nama Anda                    : "; cin>>nama;
+    cout<<"Masukkan No Telpon                    : "; cin>>telp;
+    cout<<"Masukkam File Yang Akan Di Duplikat   : "; cin>>file;
     cout<<"Masukkan pilihan Kertas Anda          : "; cin>>pil;
 
 		switch(pil){
@@ -98,19 +98,19 @@ do {
 				strcpy(menu,"Q 70 Gram");
 				i=4;
 				break;
-            case 6:
+            		case 6:
 				strcpy(menu,"Q 80 Gram");
 				i=5;
 				break;
-            case 7:
+            		case 7:
 				strcpy(menu,"A3 70 Gram");
 				i=6;
 				break;
-            case 8:
+            		case 8:
 				strcpy(menu,"Bufallo");
 				i=7;
 				break;
-            case 9:
+            		case 9:
 				strcpy(menu,"Kertas Warna");
 				i=8;
 				break;
@@ -119,12 +119,10 @@ do {
 				goto ulang;
         }
 
-   		cout<<"Berapa Jumlah Yang Mau Anda Foto Copy : "; cin>>jml;
-
-   	system("clear");
-	total = jml * harga[i];
-  
-	cout << endl;
+  cout<<"Berapa Jumlah Yang Mau Anda Foto Copy : "; cin>>jml;
+  system("clear");
+  total = jml * harga[i];
+  cout << endl;
   cout<<"====================================================================================="<<endl;
   cout<<"|                                                                                   |"<<endl;
   cout<<"|                              TOKO PERCETAKAN AMORE 3                              |"<<endl;
@@ -134,13 +132,13 @@ do {
   cout<<"====================================================================================="<<endl;
   cout << "\tKode No. "<<&tgl<<endl;
   cout << "\tTanggal Pemesanan \t\t\t : \t"<<tgl<<endl;
-	cout << "\tNama Pemesan \t\t\t\t : \t"<<nama<<endl;
-	cout << "\tNo Telp \t\t\t\t : \t"<<telp<<endl;
-	cout << "\tNama File Anda \t\t\t\t : \t"<<file<<endl;
-	cout << "\tKertas Yang anda Pilih \t\t\t : \t"<<menu<<endl;
-	cout << "\tJumlah Duplikat \t\t\t : \t"<<jml<<endl;
-	cout << "\tBiaya Foto Copy \t\t\t : \tRp "<<harga[i]<<" x "<<jml<<endl;
-	cout << "\tTotal Pembayaran \t\t\t : \tRp "<<total<<endl;
+  cout << "\tNama Pemesan \t\t\t\t : \t"<<nama<<endl;
+  cout << "\tNo Telp \t\t\t\t : \t"<<telp<<endl;
+  cout << "\tNama File Anda \t\t\t\t : \t"<<file<<endl;
+  cout << "\tKertas Yang anda Pilih \t\t\t : \t"<<menu<<endl;
+  cout << "\tJumlah Duplikat \t\t\t : \t"<<jml<<endl;
+  cout << "\tBiaya Foto Copy \t\t\t : \tRp "<<harga[i]<<" x "<<jml<<endl;
+  cout << "\tTotal Pembayaran \t\t\t : \tRp "<<total<<endl;
 
 	if(jml > 100000){
 		bonus = total - diskon;
@@ -150,7 +148,7 @@ do {
 		cout << "Total Pembayaran Setelah diskon  : Rp "<< total << endl;
 		}
 
-  cout<<"\n#####################################################################################\n"<<endl;
+        cout<<"\n#####################################################################################\n"<<endl;
 	cout << "\tSilahkan bayar disini \t\t\t : \tRp. "; 		cin>>bayar;
 	cout << endl;
 
@@ -159,14 +157,14 @@ do {
 		bayar+=kurang;
 	};
 
-	kembalian=bayar-total;
-	cout << "\tUang yang anda bayar \t\t\t\tRp. " << bayar<<endl;
-	cout << "\tUang kembalian \t\t\t\t\tRp. "     << kembalian <<endl;
-	cout<<endl;
-    cout<<"====================================================================================="<<endl;
-    cout<<"|     Jln Mastrip No 22c, Telp 0812-4919-6789, E-mail amore3_mastrip@yahoo.com      |"<<endl;
-    cout<<"====================================================================================="<<endl;
-   	cout<<endl<<endl;
+	    kembalian=bayar-total;
+	    cout << "\tUang yang anda bayar \t\t\t\tRp. " << bayar<<endl;
+	    cout << "\tUang kembalian \t\t\t\t\tRp. "     << kembalian <<endl;
+	    cout<<endl;
+	    cout<<"====================================================================================="<<endl;
+	    cout<<"|     Jln Mastrip No 22c, Telp 0812-4919-6789, E-mail amore3_mastrip@yahoo.com      |"<<endl;
+	    cout<<"====================================================================================="<<endl;
+	    cout<<endl<<endl;
 
 	ulang:
 		cout<<"#################################################################"<<endl;
